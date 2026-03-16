@@ -5,21 +5,21 @@
 class Ctxlog < Formula
   desc "Lightweight CLI tool for persistent, sharded context logging across AI agent sessions"
   homepage "https://github.com/dudarevnikita/ctxlog"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dudarevnikita/ctxlog/releases/download/v0.2.3/ctxlog_0.2.3_darwin_amd64.tar.gz"
-      sha256 "e426c890cbc79504a2ec617ad823ce0f2b0f9d572bc77618620297cad929581b"
+      url "https://github.com/dudarevnikita/ctxlog/releases/download/v0.3.0/ctxlog_0.3.0_darwin_amd64.tar.gz"
+      sha256 "421f8abd6dd6a234e304ff422b2e81982503d763353290687818d97f4faeaee3"
 
       define_method(:install) do
         bin.install "ctxlog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dudarevnikita/ctxlog/releases/download/v0.2.3/ctxlog_0.2.3_darwin_arm64.tar.gz"
-      sha256 "c5be803ea22c3c9446d808dc33c251d2bed1b7b519532affdad93d5e5227d1e8"
+      url "https://github.com/dudarevnikita/ctxlog/releases/download/v0.3.0/ctxlog_0.3.0_darwin_arm64.tar.gz"
+      sha256 "371d04c7b56c0d7304610a411db3db2c47ec98cbb3ae5ad34053b424f1b04c77"
 
       define_method(:install) do
         bin.install "ctxlog"
@@ -29,15 +29,15 @@ class Ctxlog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dudarevnikita/ctxlog/releases/download/v0.2.3/ctxlog_0.2.3_linux_amd64.tar.gz"
-      sha256 "c9bffdad82f9c9dfffe972d2d9056c22a9288796b3923f4db23106161ee32f99"
+      url "https://github.com/dudarevnikita/ctxlog/releases/download/v0.3.0/ctxlog_0.3.0_linux_amd64.tar.gz"
+      sha256 "adea03fd71445dda4523ef03856d48ec4a8c827f1a3e8583a8fa60eaf1e8bb6e"
       define_method(:install) do
         bin.install "ctxlog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dudarevnikita/ctxlog/releases/download/v0.2.3/ctxlog_0.2.3_linux_arm64.tar.gz"
-      sha256 "abe9e8ea2ee0ad7168b0cce52b00b36b526d3e3020c77c99f19eaa2767502ff0"
+      url "https://github.com/dudarevnikita/ctxlog/releases/download/v0.3.0/ctxlog_0.3.0_linux_arm64.tar.gz"
+      sha256 "cf5d0eb06a0dfbbc39d30fb07050e531d41b2ca0b5102f011694ed855a9be0bc"
       define_method(:install) do
         bin.install "ctxlog"
       end
