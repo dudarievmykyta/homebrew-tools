@@ -11,7 +11,7 @@ class Ctxlog < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dudarievmykyta/ctxlog/releases/download/v0.3.2/ctxlog_0.3.2_darwin_amd64.tar.gz"
-      sha256 "66f3bd798b977b6be4edde1c8e275d8101bff19cb23ecdf18017538e93fbd117"
+      sha256 "c9d0d36b2dc2c8a624b8d295aa0e6ea70c872a5ff222ce491c3e260163920f7d"
 
       define_method(:install) do
         bin.install "ctxlog"
@@ -19,7 +19,7 @@ class Ctxlog < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dudarievmykyta/ctxlog/releases/download/v0.3.2/ctxlog_0.3.2_darwin_arm64.tar.gz"
-      sha256 "574ca2b653ab6c8779066a06d100cd2ab22991dd10b052c516de60aff29f65c6"
+      sha256 "5a2ea8f6dea5c42aa713e7e426ca453732786cebc77a34b31b08c2235384f500"
 
       define_method(:install) do
         bin.install "ctxlog"
@@ -30,14 +30,14 @@ class Ctxlog < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dudarievmykyta/ctxlog/releases/download/v0.3.2/ctxlog_0.3.2_linux_amd64.tar.gz"
-      sha256 "5e496835e6a5f2c2920e01e4b4888ca8848ecdc0b54079c98c830046c518c382"
+      sha256 "7f1eb37d8f2882923d40542f10742c9c0fd1775c756e6c52f2fbc91a980ab96e"
       define_method(:install) do
         bin.install "ctxlog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dudarievmykyta/ctxlog/releases/download/v0.3.2/ctxlog_0.3.2_linux_arm64.tar.gz"
-      sha256 "17416a3528fddf6ece5854450f50dc5e264116ae653be9e2043dc59853c363f8"
+      sha256 "c9ca5b25cee6c4395365e64a18d31524bd71e375196d37e31c2895358fc369dd"
       define_method(:install) do
         bin.install "ctxlog"
       end
